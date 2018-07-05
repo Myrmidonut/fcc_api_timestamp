@@ -23,19 +23,24 @@ app.get("/", function (req, res) {
 app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
-/*
+
 app.get("/api/timestamp/", function(req, res) {
   let date = new Date();
   res.json({"unix": date.getTime(), "utc" : date.toUTCString() });
 });
 
 app.get("/api/timestamp/:date_string", function(req, res) {
+  let date_number = Number(req.params.date_string);
   let date_string = req.params.date_string;
+  if (date_string == date_number) {
+    date_string = date_number;
+  }
+  
   let date = new Date(date_string);
   console.log(date);
   res.json({"unix": date.getTime(), "utc" : date.toUTCString() });
 });
-*/
+
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
