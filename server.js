@@ -11,13 +11,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/hello", (req, res) => {
-  res.json({
-    greeting: 'hello API'
-  });
+  res.json({greeting: 'hello API'});
 });
 
 app.get("/api/timestamp/", (req, res) => {
   const date = new Date();
+  
   res.json({
     "unix": date.getTime(),
     "utc" : date.toUTCString()
