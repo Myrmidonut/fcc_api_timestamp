@@ -45,3 +45,17 @@ form {
 main hr {
   margin: 20px;
 }
+
+h1 {
+  line-height: initial;
+}
+
+input[type=text] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  height: 32px;
+  font-size: 16px;
+}
