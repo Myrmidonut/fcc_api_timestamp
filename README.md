@@ -1,4 +1,4 @@
-# Timestamp Microservice
+# Timestamp
 
 ## Introduction
 A time string can be submitted and gets returned as JSON with the appropriate unix and UTC time strings.
@@ -27,4 +27,4 @@ https://fcc-api-timestamp-microservice-fred.glitch.me
 
 ## Preview Images
 ### Main Screen:
-![Timestamp Microservice](readme_images/timestamp-microservice.png)
+![Timestamp](readme_images/timestamp.png)
